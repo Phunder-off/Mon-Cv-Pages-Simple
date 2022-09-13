@@ -1,0 +1,19 @@
+main {
+	display: flex;
+	flex-wrap: nowrap;
+
+	&,
+	* {
+		transition: all 1s, color 0s;
+	}
+}
+
+#btn-hb {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	main {
+		flex-wrap: wrap;
+	}
+}

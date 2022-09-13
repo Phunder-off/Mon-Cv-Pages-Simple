@@ -1,0 +1,56 @@
+@media (max-width: 1024px) {
+	#btn-hb {
+		display: block;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		height: 40px;
+		width: 40px;
+		padding: 2px;
+		background-color: rgba(255, 255, 255, 0.25);
+		border: solid 3px $secondary-color;
+		border-radius: 10%;
+
+		span {
+			transition: all 0.5s, color 0s;
+			display: inline-block;
+			background-color: $secondary-color;
+			border-radius: 5px;
+
+			height: 4px;
+			width: 100%;
+
+			position: relative;
+
+			&:nth-child(1) {
+				top: -7px;
+			}
+			&:nth-child(2) {
+				top: -11px;
+			}
+			&:nth-child(3) {
+				top: -15px;
+			}
+		}
+
+		&[data-enable="true"] span {
+			&:nth-child(1) {
+				top: 5px;
+				transform: rotate(225deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				top: -27px;
+				transform: rotate(-225deg);
+			}
+
+			&:nth-child(1),
+			&:nth-child(3) {
+				width: 125%;
+				left: -4px;
+			}
+		}
+	}
+}

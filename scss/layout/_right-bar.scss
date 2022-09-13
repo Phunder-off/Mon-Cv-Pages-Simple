@@ -1,0 +1,114 @@
+#right-bar {
+	width: calc(75%);
+	padding: 20px;
+
+	section {
+		padding-bottom: 1rem;
+
+		&:not(:first-child) {
+			border-top: solid $primary-color 2px;
+			padding-top: 10px;
+		}
+
+		h2 {
+			margin-bottom: 0.5rem;
+			font-size: 2rem;
+		}
+
+		> p {
+			padding: 5px;
+			font-size: 1.1rem;
+			color: $primary-color;
+		}
+
+		h4,
+		h5 {
+			margin-bottom: 5px;
+		}
+
+		h4 {
+			color: $primary-color;
+		}
+
+		h5 {
+			color: $secondary-color;
+		}
+
+		> div {
+			position: relative;
+			top: 7px;
+			color: $secondary-color;
+
+			h3 {
+				display: inline-block;
+				font-size: 2rem;
+				width: 75%;
+			}
+
+			svg {
+				border: solid 3px $secondary-color;
+				border-radius: 50%;
+				padding: 5px;
+				height: 16px;
+				width: 16px;
+			}
+		}
+
+		> ul {
+			margin-top: 0;
+			padding-top: 1rem;
+			margin-left: 17px;
+
+			border-left: solid 7px white;
+			box-shadow: -2px 0px 0px 0px $secondary-color;
+
+			> li {
+				margin-bottom: -6px;
+				padding-left: 10px;
+
+				&::marker {
+					content: "■";
+					font-size: 1.5em;
+					color: $secondary-color;
+					background-color: #fff;
+				}
+
+				> div {
+					display: flex;
+					flex-wrap: nowrap;
+
+					margin-bottom: 1rem;
+
+					> div {
+						&:first-child {
+							color: gray;
+							margin: 0;
+							width: 30%;
+						}
+						&:last-child {
+							width: 70%;
+							ul {
+								margin-top: 10px;
+								margin-bottom: 10px;
+								margin-left: 1.75rem;
+								list-style: "► ";
+								li::marker {
+									color: gray;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		& {
+			width: 100%;
+		}
+		section h2{
+			margin: 0;
+		}
+	}
+}
