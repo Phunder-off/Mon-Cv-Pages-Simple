@@ -27,6 +27,11 @@ main * {
   transition: all 1s, color 0s;
 }
 
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 #btn-hb {
   display: none;
 }
