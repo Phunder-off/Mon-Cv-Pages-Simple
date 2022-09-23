@@ -229,7 +229,7 @@ li {
   box-shadow: -2px 0px 0px 0px #21a0cd;
 }
 .listingRoute > li {
-  margin-bottom: -6px;
+  color: #17365d;
   padding-left: 10px;
 }
 .listingRoute > li::marker {

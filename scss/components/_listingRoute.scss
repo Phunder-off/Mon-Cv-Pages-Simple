@@ -7,7 +7,7 @@
 	box-shadow: -2px 0px 0px 0px $secondary-color;
 
 	> li {
-		margin-bottom: -6px;
+		color: $primary-color;
 		padding-left: 10px;
 
 		&::marker {
@@ -18,8 +18,7 @@
 		}
 
 		> div {
-            position: relative;
-
+			position: relative;
 
 			display: flex;
 			flex-wrap: nowrap;
