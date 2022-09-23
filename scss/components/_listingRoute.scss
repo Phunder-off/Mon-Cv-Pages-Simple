@@ -1,0 +1,50 @@
+.listingRoute {
+	margin-top: 0;
+	padding-top: 1rem;
+	margin-left: 17px;
+
+	border-left: solid 6px rgba($color: #fff, $alpha: 0);
+	box-shadow: -2px 0px 0px 0px $secondary-color;
+
+	> li {
+		margin-bottom: -6px;
+		padding-left: 10px;
+
+		&::marker {
+			content: "■";
+			font-size: 1.5em;
+			color: $secondary-color;
+			background-color: #fff;
+		}
+
+		> div {
+            position: relative;
+
+
+			display: flex;
+			flex-wrap: nowrap;
+
+			margin-bottom: 1rem;
+
+			> div {
+				&:first-child {
+					color: gray;
+					margin: 0;
+					width: 30%;
+				}
+				&:last-child {
+					width: 70%;
+					ul {
+						margin-top: 10px;
+						margin-bottom: 10px;
+						margin-left: 1.75rem;
+						list-style: "► ";
+						li::marker {
+							color: gray;
+						}
+					}
+				}
+			}
+		}
+	}
+}

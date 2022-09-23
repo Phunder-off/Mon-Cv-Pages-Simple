@@ -1,0 +1,22 @@
+#competences {
+	h3 {
+		display: inline-block;
+		width: 75%;
+		
+
+		color: $secondary-color;
+		font-size: 2rem;
+	}
+
+	h2 {
+        margin-top: 0;
+		position: relative;
+		top: 5px;
+        
+        @media (min-width: 1024px) {
+            top: 13px;
+        }
+	}
+
+    
+}
