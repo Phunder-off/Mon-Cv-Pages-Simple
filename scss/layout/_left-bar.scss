@@ -9,9 +9,16 @@
 	}
 
 	section {
+
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+
 		&:nth-child(1),
 		h2 {
 			text-align: center;
+
+			margin-bottom: 2rem;
+			
 
 			img {
 				border: solid 3px white;
@@ -35,10 +42,15 @@
 				padding-left: 1.25rem;
 				list-style: square;
 			}
+			svg {
+				width: 10%;
+				height: auto;
+				margin: 5px;
+			}
 		}
 
 		ul {
-			margin-top: 5px;
+			
 
 			p,
 			a {

@@ -50,9 +50,14 @@ li {
 #left-bar * {
   transition: all 1s, color 0s;
 }
+#left-bar section {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
 #left-bar section:nth-child(1),
 #left-bar section h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 #left-bar section:nth-child(1) img,
 #left-bar section h2 img {
@@ -72,8 +77,10 @@ li {
   padding-left: 1.25rem;
   list-style: square;
 }
-#left-bar section ul {
-  margin-top: 5px;
+#left-bar section:not(:nth-child(1), :nth-child(2)) svg {
+  width: 10%;
+  height: auto;
+  margin: 5px;
 }
 #left-bar section ul p,
 #left-bar section ul a {
@@ -106,6 +113,13 @@ li {
 #right-bar {
   width: 75%;
   padding: 20px;
+}
+#right-bar #presentation span {
+  font-style: italic;
+  color: #21a0cd;
+}
+#right-bar #presentation p {
+  font-size: 0.85rem;
 }
 #right-bar section {
   padding-bottom: 1rem;

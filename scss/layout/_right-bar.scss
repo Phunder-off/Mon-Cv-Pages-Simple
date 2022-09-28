@@ -2,6 +2,16 @@
 	width: calc(75%);
 	padding: 20px;
 
+	#presentation {
+		span {
+			font-style: italic;
+			color: $secondary-color;
+		}
+		p {
+			font-size: 0.85rem;
+		}
+	}
+
 	section {
 		padding-bottom: 1rem;
 
@@ -23,9 +33,8 @@
 
 		h5 {
 			color: $secondary-color;
-			
 		}
-		
+
 		> p {
 			padding: 5px;
 			font-size: 1.1rem;
@@ -35,7 +44,7 @@
 		> div {
 			position: relative;
 			top: 7px;
-			
+
 			color: $secondary-color;
 
 			h3 {
@@ -52,15 +61,13 @@
 				width: 16px;
 			}
 		}
-
-		
 	}
 
 	@media (max-width: 1024px) {
 		& {
 			width: 100%;
 		}
-		section h2{
+		section h2 {
 			margin: 0;
 		}
 	}
