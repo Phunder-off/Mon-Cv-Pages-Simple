@@ -240,7 +240,7 @@ li {
   padding-top: 1rem;
   margin-left: 17px;
   border-left: solid 6px rgba(255, 255, 255, 0);
-  box-shadow: -3px 0px 0px 0px #21a0cd;
+  box-shadow: -3px 0px 0px -1px #21a0cd;
 }
 .listingRoute > li {
   color: #17365d;
