@@ -18,5 +18,13 @@
         }
 	}
 
-    
+	& > div {
+		display: flex;
+		flex-direction: row;
+		& > div {
+			width: 100%;
+		}
+		justify-content: center;
+		align-items: top;
+	}
 }

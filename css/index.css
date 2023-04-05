@@ -187,6 +187,15 @@ li {
     top: 13px;
   }
 }
+#competences > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+}
+#competences > div > div {
+  width: 100%;
+}
 
 @media (max-width: 1024px) {
   #btn-hb {
@@ -274,4 +283,6 @@ li {
 }
 .listingRoute > li > div > div:last-child ul li::marker {
   color: gray;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
